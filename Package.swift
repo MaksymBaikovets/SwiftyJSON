@@ -1,10 +1,12 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
 import PackageDescription
 
 let package = Package(
     name: "SwiftyJSON",
     platforms: [
-        .macOS(.v10_10), .iOS(.v8), .tvOS(.v9), .watchOS(.v3)
+        .iOS(.v12)
     ],
     products: [
         .library(name: "SwiftyJSON", targets: ["SwiftyJSON"])
